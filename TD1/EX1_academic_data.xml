@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<courses>
+
+    <course code="II.3201" credits="4">
+        <title>Databases and Data Management</title>
+        <description>Relational database design, SQL, normalization, and an introduction to NoSQL data stores.</description>
+        <professor>Dr. Marc Dubreuil</professor>
+    </course>
+
+    <course code="II.3410" credits="5">
+        <title>Machine Learning Fundamentals</title>
+        <description>Supervised and unsupervised learning, model evaluation, and classical ML algorithms.</description>
+        <professor>Dr. Elena Vasquez</professor>
+    </course>
+
+    <course code="II.3450" credits="4">
+        <title>Natural Language Processing</title>
+        <description>Text processing, language models, embeddings, and applied NLP pipelines.</description>
+        <professor>Dr. Karim Haddad</professor>
+    </course>
+
+    <course code="II.3480" credits="4">
+        <title>Computer Vision</title>
+        <description>Image processing, convolutional neural networks, and object detection.</description>
+        <professor>Dr. Elena Vasquez</professor>
+    </course>
+
+    <course code="II.3510" credits="4">
+        <title>Big Data and Cloud Computing</title>
+        <description>Distributed data processing, cloud platforms, and scalable data pipelines.</description>
+        <professor>Dr. Thomas Renault</professor>
+    </course>
+
+    <course code="II.3521" credits="4">
+        <title>Semantic Web and Knowledge Management</title>
+        <description>This course covers RDF, OWL, SPARQL and Knowledge Graph construction.</description>
+        <professor>Ammar Kheirbek</professor>
+    </course>
+
+    <course code="II.3530" credits="5">
+        <title>Deep Learning</title>
+        <description>Neural network architectures, backpropagation, and modern deep learning frameworks.</description>
+        <professor>Dr. Elena Vasquez</professor>
+    </course>
+
+    <course code="II.3550" credits="3">
+        <title>Knowledge Graphs and RDF Applications</title>
+        <description>Applied construction and querying of knowledge graphs combining NLP and Semantic Web technologies.</description>
+        <professor>Ammar Kheirbek</professor>
+    </course>
+
+</courses>
