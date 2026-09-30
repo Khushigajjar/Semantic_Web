@@ -1,0 +1,65 @@
+    CREATE TABLE Course (
+    CourseCode VARCHAR(10) PRIMARY KEY,
+    Title VARCHAR(100),
+    Description TEXT,
+    Professor VARCHAR(100),
+    Credits INT
+);
+
+
+INSERT INTO Course VALUES
+('II.3201', 'Databases and Data Management',
+ 'Relational database design, SQL, normalization, and an introduction to NoSQL data stores.',
+ 'Dr. Marc Dubreuil', 4);
+
+INSERT INTO Course VALUES
+('II.3410', 'Machine Learning Fundamentals',
+ 'Supervised and unsupervised learning, model evaluation, and classical ML algorithms.',
+ 'Dr. Elena Vasquez', 5);
+
+INSERT INTO Course VALUES
+('II.3450', 'Natural Language Processing',
+ 'Text processing, language models, embeddings, and applied NLP pipelines.',
+ 'Dr. Karim Haddad', 4);
+
+INSERT INTO Course VALUES
+('II.3480', 'Computer Vision',
+ 'Image processing, convolutional neural networks, and object detection.',
+ 'Dr. Elena Vasquez', 4);
+
+INSERT INTO Course VALUES
+('II.3510', 'Big Data and Cloud Computing',
+ 'Distributed data processing, cloud platforms, and scalable data pipelines.',
+ 'Dr. Thomas Renault', 4);
+
+INSERT INTO Course VALUES
+('II.3521', 'Semantic Web and Knowledge Management',
+ 'This course covers RDF, OWL, SPARQL and Knowledge Graph construction.',
+ 'Ammar Kheirbek', 4);
+
+INSERT INTO Course VALUES
+('II.3530', 'Deep Learning',
+ 'Neural network architectures, backpropagation, and modern deep learning frameworks.',
+ 'Dr. Elena Vasquez', 5);
+
+INSERT INTO Course VALUES
+('II.3550', 'Knowledge Graphs and RDF Applications',
+ 'Applied construction and querying of knowledge graphs combining NLP and Semantic Web technologies.',
+ 'Ammar Kheirbek', 3);
+
+
+CREATE TABLE Prerequisite (
+    CourseCode VARCHAR(10),
+    PrerequisiteCode VARCHAR(10),
+    PRIMARY KEY (CourseCode, PrerequisiteCode),
+    FOREIGN KEY (CourseCode) REFERENCES Course(CourseCode),
+    FOREIGN KEY (PrerequisiteCode) REFERENCES Course(CourseCode)
+);
+INSERT INTO Prerequisite VALUES
+('II.3530', 'II.3410');
+
+INSERT INTO Prerequisite VALUES
+('II.3550', 'II.3521');
+
+INSERT INTO Prerequisite VALUES
+('II.3450', 'II.3410');
