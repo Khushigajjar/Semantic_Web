@@ -1,0 +1,16 @@
+@prefix s2a:  <http://example.org/s2a/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+s2a:AcademicProgram      rdf:type rdfs:Class .
+s2a:UndergraduateProgram rdf:type rdfs:Class .
+s2a:GraduateProgram      rdf:type rdfs:Class .
+s2a:BachelorOfScience    rdf:type rdfs:Class .
+s2a:MasterOfScience      rdf:type rdfs:Class .
+s2a:PhD                  rdf:type rdfs:Class .
+
+s2a:UndergraduateProgram rdfs:subClassOf s2a:AcademicProgram .
+s2a:GraduateProgram      rdfs:subClassOf s2a:AcademicProgram .
+s2a:BachelorOfScience    rdfs:subClassOf s2a:UndergraduateProgram .
+s2a:MasterOfScience      rdfs:subClassOf s2a:GraduateProgram .
+s2a:PhD                  rdfs:subClassOf s2a:GraduateProgram .
